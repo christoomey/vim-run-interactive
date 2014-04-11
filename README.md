@@ -28,7 +28,7 @@ Installation
 Install with [Vundle][] by adding the following line to your `vimrc`:
 
 ``` vim
-Bundle 'christoomey/run-interactive'
+Bundle 'christoomey/vim-run-interactive'
 ```
 
 And then run the `:BundleInstall` command from within Vim.
