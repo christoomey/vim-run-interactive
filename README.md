@@ -5,6 +5,11 @@ Run Interactive is a Vim plugin for selectively running commands via an
 interactive shell. This allows you to take advantage of custom functions,
 aliases, etc that are configured via your login shell scripts.
 
+Vim supports treating the shell as an interactive shell, but this has
+[performance and maintenance concerns][]. This plugin allows for temporarily
+setting Vim to use an interactive shell, then returns to default
+non-interactive configuration after executing the specified command.
+
 It provides a single command, `RunInInteractiveShell`, which allows you to
 run a command via an interactive shell. For instance, assume you have a
 a git alias called `update` defined in your `~/.gitconfig`. By default you
@@ -14,6 +19,8 @@ you can run it via:
 ``` vim
 :RunInInteractiveShell git update
 ```
+
+[performance and maintenance concerns]: https://github.com/tpope/vim-sensible/issues/29
 
 Installation
 ------------
